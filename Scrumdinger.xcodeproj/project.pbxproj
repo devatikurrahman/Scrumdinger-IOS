@@ -20,6 +20,8 @@
 		6098D3AD2A9E087900004A04 /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098D3AC2A9E087900004A04 /* ScrumProgressViewStyle.swift */; };
 		6098D3AF2A9E0BAA00004A04 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098D3AE2A9E0BAA00004A04 /* ScrumTimer.swift */; };
 		6098D3B12A9E176C00004A04 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098D3B02A9E176C00004A04 /* MeetingFooterView.swift */; };
+		6098D3B42A9E3ED000004A04 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6098D3B32A9E3ED000004A04 /* ding.wav */; };
+		6098D3B62A9E407700004A04 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098D3B52A9E407700004A04 /* AVPlayer+Ding.swift */; };
 		60A2911C2A9B6CF80037657B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2911B2A9B6CF80037657B /* DetailView.swift */; };
 		60A2911E2A9BB6450037657B /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2911D2A9BB6450037657B /* DetailEditView.swift */; };
 		60A291202A9BE8AD0037657B /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2911F2A9BE8AD0037657B /* ThemeView.swift */; };
@@ -41,6 +43,8 @@
 		6098D3AC2A9E087900004A04 /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		6098D3AE2A9E0BAA00004A04 /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		6098D3B02A9E176C00004A04 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		6098D3B32A9E3ED000004A04 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		6098D3B52A9E407700004A04 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		60A2911B2A9B6CF80037657B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		60A2911D2A9BB6450037657B /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		60A2911F2A9BE8AD0037657B /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 				6036945A2A99F39E0006C3F3 /* Theme.swift */,
 				6036945C2A99F6950006C3F3 /* DailyScrum.swift */,
 				6098D3AE2A9E0BAA00004A04 /* ScrumTimer.swift */,
+				6098D3B52A9E407700004A04 /* AVPlayer+Ding.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 				6098D3AB2A9E082400004A04 /* Views */,
 				6084A9862A9954D80048FE64 /* ScrumdingerApp.swift */,
 				6084A98A2A9954D90048FE64 /* Assets.xcassets */,
+				6098D3B22A9E3ED000004A04 /* Resources */,
 				6084A98C2A9954D90048FE64 /* Preview Content */,
 			);
 			path = Scrumdinger;
@@ -120,6 +126,14 @@
 				603694602A9A14E50006C3F3 /* TraillingIconLabelStyle.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6098D3B22A9E3ED000004A04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6098D3B32A9E3ED000004A04 /* ding.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6098D3B42A9E3ED000004A04 /* ding.wav in Resources */,
 				6084A98E2A9954D90048FE64 /* Preview Assets.xcassets in Resources */,
 				6084A98B2A9954D90048FE64 /* Assets.xcassets in Resources */,
 			);
@@ -207,6 +222,7 @@
 				6084A9872A9954D80048FE64 /* ScrumdingerApp.swift in Sources */,
 				60A291202A9BE8AD0037657B /* ThemeView.swift in Sources */,
 				6036945F2A9A0E3C0006C3F3 /* CardView.swift in Sources */,
+				6098D3B62A9E407700004A04 /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
