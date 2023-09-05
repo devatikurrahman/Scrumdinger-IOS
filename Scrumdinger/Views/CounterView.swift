@@ -9,10 +9,11 @@ import SwiftUI
 
 
 struct TextFieldView: View {
-    @Binding var text: String
+    //@Binding var text: String
+    @Binding var textTest: String
     
     var body: some View {
-        TextField("Enter Text ", text: $text)
+        TextField("Enter Text ", text: $textTest)
     }
 }
 
@@ -23,7 +24,7 @@ struct CounterView: View {
     var body: some View {
         VStack {
             Text("You entered: \(text)")
-            TextFieldView(text: $text)
+            TextFieldView(textTest: $text)
             .padding(10)
             .font(.title)
         }
