@@ -5,7 +5,7 @@
 //  Created by Atikur Rahman on 9/6/23.
 //
 
-import Foundation
+import SwiftUI
 
 @MainActor
 class ScrumStore: ObservableObject {
@@ -30,5 +30,14 @@ class ScrumStore: ObservableObject {
         }
         let scrums = try await task.value
         self.scrums = scrums
+    }
+    
+    func save(scrums: [DailyScrum]) async throws {
+        let task = Task {
+            let data = try JSONEncoder().encode(scrums)
+            let outfile = try Self.fileURL()
+            try data.write(to: outfile)
+        }
+        _ = try await task.value
     }
 }
