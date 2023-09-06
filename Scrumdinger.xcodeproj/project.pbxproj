@@ -104,9 +104,9 @@
 		6084A9852A9954D80048FE64 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				6084A9862A9954D80048FE64 /* ScrumdingerApp.swift */,
 				603694592A99F3810006C3F3 /* Models */,
 				6098D3AB2A9E082400004A04 /* Views */,
-				6084A9862A9954D80048FE64 /* ScrumdingerApp.swift */,
 				6084A98A2A9954D90048FE64 /* Assets.xcassets */,
 				6098D3B22A9E3ED000004A04 /* Resources */,
 				6084A98C2A9954D90048FE64 /* Preview Content */,
